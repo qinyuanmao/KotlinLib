@@ -1,0 +1,119 @@
+<resources>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="Button" parent="style_base_button">
+        <item name="android:textSize">@dimen/button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_height">@dimen/vertical_height_text</item>
+    </style>
+
+    <style name="short_Button" parent="style_base_button">
+        <item name="android:textSize">@dimen/button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">@dimen/common_72dp</item>
+    </style>
+
+    <style name="HintText" parent="style_textview_base">
+        <item name="android:textColor">@color/hintTextColor</item>
+        <item name="android:textSize">@dimen/body</item>
+    </style>
+
+
+    <!--textview基础样式 -->
+    <style name="style_textview_base">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/text_color_black</item>
+    </style>
+
+
+    <style name="ContentText" parent="style_textview_base">
+        <item name="android:textColor">@color/contentTextColor</item>
+        <item name="android:textSize">@dimen/subhead</item>
+    </style>
+
+    <style name="TitleText">
+        <item name="android:textColor">@color/titleTextColor</item>
+        <item name="android:textSize">@dimen/title</item>
+    </style>
+
+    <!-- 基础edittext样式-->
+    <style name="style_base_editText" parent="style_textview_base">
+        <item name="android:textColorHint">@color/hintTextColor</item>
+        <item name="android:padding">@dimen/common_4dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:hint">@string/edittext_hint</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <!-- 基础按钮样式-->
+    <style name="style_base_button">
+        <item name="android:textSize">@dimen/button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/vertical_height_36dp</item>
+        <item name="android:background">@drawable/bg_btn_base</item>
+    </style>
+
+    <style name="DangerButton" parent="style_base_button">
+        <item name="android:background">@drawable/bg_btn_danger</item>
+    </style>
+
+    <style name="WarningButton" parent="style_base_button">
+        <item name="android:background">@drawable/bg_btn_warning</item>
+    </style>
+
+    <style name="GreenButton" parent="style_base_button">
+        <item name="android:background">@drawable/bg_btn_green</item>
+    </style>
+
+    <style name="BlueButton" parent="style_base_button">
+        <item name="android:background">@drawable/bg_btn_blue</item>
+    </style>
+
+    <!--appbar标题栏字体样式 -->
+    <style name="appbar_title" parent="style_textview_base">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_20sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- appbar右侧按钮样式-->
+    <style name="toolbar_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:layout_gravity">right|center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:paddingRight">@dimen/common_8dp</item>
+    </style>
+
+    <!-- dialog基础样式-->
+    <style name="base_theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+    <!-- treeview padding-->
+    <style name="TreeNodeStyle">
+        <item name="android:paddingLeft">@dimen/common_16dp</item>
+    </style>
+
+
+</resources>

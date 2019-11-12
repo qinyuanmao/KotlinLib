@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="数据库操作"
+            android:textColor="#000"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp">
+
+            <Button
+                android:id="@+id/mBtnInsert"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="insert"
+                />
+
+            <Button
+                android:id="@+id/mBtnSelect"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="select"
+                />
+
+            <Button
+                android:id="@+id/mBtnUpdate"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="update"
+                />
+
+            <Button
+                android:id="@+id/mBtnDelete"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="delete"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mTvSqlResult"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="#333"
+            android:padding="4dp"
+            android:text="数据库操作结果"
+            android:textColor="#FFF"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="8dp"
+            android:background="#7ef"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="图片加载"
+            android:textColor="#000"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/mImg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="8dp"
+            android:background="#7ef"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="协程计数器"
+            android:textColor="#000"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/mTvCount"
+            android:text="0"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp">
+
+            <Button
+                android:id="@+id/mBtnCountStart"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="开始"
+                />
+
+            <Button
+                android:id="@+id/mBtnCountStop"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="暂停"
+                />
+
+            <Button
+                android:id="@+id/mBtnCountEnd"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="结束"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="8dp"
+            android:background="#7ef"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="网络请求"
+            android:textColor="#000"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/mBtnUpdateApp"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="测试版本更新和文件下载"
+                />
+
+            <Button
+                android:id="@+id/mBtnUploadApp"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="测试文件上传"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mTvNetworkResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="#333"
+            android:padding="4dp"
+            android:layout_marginBottom="16dp"
+            android:text="网络操作情况"
+            android:textColor="#FFF"
+            android:textSize="14sp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="8dp"
+            android:background="#7ef"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="WebSocket"
+            android:textColor="#000"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+            android:layout_marginHorizontal="16dp">
+
+            <Button
+                android:id="@+id/mBtnSocketCoc"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="协程启动Websocket"
+                />
+
+            <Button
+                android:id="@+id/mBtnSocketService"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="服务启动Websocket"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/mBtnSocketStop"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="关闭"
+            />
+    </LinearLayout>
+</ScrollView>

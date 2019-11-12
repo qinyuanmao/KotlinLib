@@ -1,0 +1,23 @@
+<resources>
+    <string name="downloading">正在下载…</string>
+    <string name="cannot_install">用户不允许安装程序…</string>
+    <string name="downloaded">下载完成</string>
+    <string name="install">安装</string>
+    <string name="update">升级</string>
+    <string name="commit">确认</string>
+    <string name="cancel">取消</string>
+
+    <!-- 网络请求库 -->
+    <string name="url_cannot_null">请求地址不能为空</string>
+    <string name="current_internet_invalid">当前网络未连接</string>
+
+
+    <!-- 崩溃 -->
+    <string name="crash_toast_text">程序崩溃了</string>
+    <string name="crash_dialog_text">感谢您对我们的支持！</string>
+    <string name="crash_dialog_title">发送崩溃日志</string>
+    <string name="crash_dialog_ok_toast">发送成功</string>
+
+
+    <string name="edittext_hint">请输入内容</string>
+</resources>

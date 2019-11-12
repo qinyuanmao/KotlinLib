@@ -1,0 +1,155 @@
+/**
+ * Shared file between builds so that they can all use the same dependencies and
+ * maven repositories.
+ **/
+ext.deps = [:]
+
+def versions = [:]
+versions.android_gradle_plugin = "3.3.2"
+versions.kotlin = "1.3.21"
+versions.kotlin_reflect = "1.3.11"
+versions.support = "27.1.1"
+versions.multidex = "1.0.2"
+versions.constraint_layout = "1.1.3"
+versions.dagger = "2.11"
+versions.rxjava2 = "2.1.7"
+versions.rx_android = "2.0.1"
+versions.retrofit = "2.3.0"
+versions.persistent_cookie = "v1.0.1"
+versions.gson = "2.8.5"
+versions.qmui = "1.0.4"
+versions.flow_layout = "1.0.3"
+versions.swipe_recycler = "1.1.3"
+versions.swiprecyclerview = "1.0.0"
+versions.permission = "1.1.2"
+versions.utils = "1.13.5"
+versions.top_snackbar = "1.1.1"
+versions.litepal = "1.6.1"
+versions.toasty = "1.1.3"
+versions.logger = "1.15"
+versions.material_dialog = "0.9.6.0"
+versions.sweet_dialog = "1.0.0"
+versions.acra = "5.1.1"
+//Arouter
+versions.arouter_compiler = "1.1.4"
+versions.arouter_api = "1.3.1"
+
+versions.publiclib = "1.0.4"
+
+
+def deps = [:]
+
+//support
+def support = [:]
+support.annotations = "com.android.support:support-annotations:$versions.support"
+support.app_compat = "com.android.support:appcompat-v7:$versions.support"
+support.v13 = "com.android.support:support-v13:$versions.support"
+support.percent = "com.android.support:percent:$versions.support"
+support.recyclerview = "com.android.support:recyclerview-v7:$versions.support"
+support.cardview = "com.android.support:cardview-v7:$versions.support"
+support.design = "com.android.support:design:$versions.support"
+support.v4 = "com.android.support:support-v4:$versions.support"
+support.core_utils = "com.android.support:support-core-utils:$versions.support"
+support.multidex = "com.android.support:multidex:$versions.multidex"
+deps.support = support
+
+//retrofit
+def retrofit = [:]
+retrofit.runtime = "com.squareup.retrofit2:retrofit:$versions.retrofit"
+retrofit.adapter = "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofi"
+retrofit.gson = "com.squareup.retrofit2:converter-gson:$versions.retrofit"
+deps.retrofit = retrofit
+
+//dagger
+def dagger = [:]
+dagger.runtime = "com.google.dagger:dagger:$versions.dagger"
+dagger.android = "com.google.dagger:dagger-android:$versions.dagger"
+dagger.android_support = "com.google.dagger:dagger-android-support:$versions.dagger"
+dagger.compiler = "com.google.dagger:dagger-compiler:$versions.dagger"
+dagger.android_support_compiler = "com.google.dagger:dagger-android-processor:$versions.dagger"
+deps.dagger = dagger
+
+//kotlin
+def kotlin = [:]
+kotlin.stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin"
+kotlin.test = "org.jetbrains.kotlin:kotlin-test-junit:$versions.kotlin"
+kotlin.plugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
+kotlin.reflect = "org.jetbrains.kotlin:kotlin-reflect:$versions.kotlin_reflect"
+kotlin.coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.0"
+deps.kotlin = kotlin
+
+//view
+deps.constraint_layout = "com.android.support.constraint:constraint-layout:$versions.constraint_layout"
+deps.flow_layout = "com.zhy:flowlayout-lib:$versions.flow_layout"
+deps.swipe_recycler = "com.yanzhenjie:recyclerview-swipe:$versions.swipe_recycler"
+deps.swiprecyclerview = "com.swip:swiprecyclerview:$versions.swiprecyclerview"
+deps.material_dialog = "com.afollestad.material-dialogs:core:$versions.material_dialog" //dialog
+deps.sweet_dialog = "com.github.cazaea:sweet-alert-dialog:$versions.sweet_dialog"//dialog
+deps.PictureSelector = "com.github.LuckSiege.PictureSelector:picture_library:v2.2.3"//图片选择器
+deps.BasePopup = "com.github.razerdp:BasePopup:2.2.0"//popup库
+deps.avi = "com.wang.avi:library:2.1.3"//动画指示库
+deps.circleprogress = "com.github.lzyzsd:circleprogress:1.2.1"//圆形进度条
+
+deps.SmartRefreshLayout = "com.scwang.smartrefresh:SmartRefreshLayout:1.0.4"//下拉刷新库
+deps.SmartRefreshHeader = "com.scwang.smartrefresh:SmartRefreshHeader:1.0.4"
+
+deps.skinlibrary = "com.solid.skin:skinlibrary:2.0.0-beta8"//换肤库
+deps.BaseRecyclerViewAdapterHelper = "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30"//baseAdapter
+
+deps.android_gradle_plugin = "com.android.tools.build:gradle:$versions.android_gradle_plugin"
+deps.rxjava2 = "io.reactivex.rxjava2:rxjava:$versions.rxjava2"
+deps.rx_android = "io.reactivex.rxjava2:rxandroid:$versions.rx_android"
+
+//db
+deps.wcdb = "com.tencent.wcdb:wcdb-android:1.0.5"//微信数据库
+deps.snappydb = "com.snappydb:snappydb-lib:0.5.2"
+deps.litepal = "org.litepal.android:core:$versions.litepal"//orm数据库
+
+//other
+deps.okhttp = "com.squareup.okhttp3:okhttp:3.12.1"
+deps.persistent_cookie = "com.github.franmontiel:PersistentCookieJar:$versions.persistent_cookie"
+deps.gson = "com.google.code.gson:gson:$versions.gson"
+deps.permission = "com.yanzhenjie:permission:$versions.permission"
+deps.utils = "com.blankj:utilcode:$versions.utils"
+deps.top_snackbar = "com.androidadvance:topsnackbar:$versions.top_snackbar"//顶部弹出snackbar
+
+deps.PickerView = 'com.contrarywind:Android-PickerView:4.1.8'//仿ios滚轮选择器
+
+deps.toasty = "com.github.GrenderG:Toasty:$versions.toasty"//好看的toast库
+
+deps.smallvideorecord2 = "com.mabeijianxi.smallvideorecord2:smallvideorecord2:1.0.5"//小视频录制库
+deps.ShortcutBadger = "me.leolin:ShortcutBadger:1.1.22@aar"
+
+deps.Luban = "top.zibin:Luban:1.1.8"//图片压缩库
+
+deps.arouter_api = "com.alibaba:arouter-api:$versions.arouter_api"
+deps.arouter_compiler = "com.alibaba:arouter-compiler:$versions.arouter_compiler"
+
+deps.acra_http = "ch.acra:acra-http:$versions.acra"//崩溃日志收集库
+deps.acra_dialog = "ch.acra:acra-dialog:$versions.acra"//崩溃日志收集库
+deps.acra_notify = "ch.acra:acra-notification:$versions.acra"//崩溃日志收集库
+
+deps.jiaozi = 'cn.jzvd:jiaozivideoplayer:7.0.4'//视频播放库
+
+deps.publiclib = "com.wisesoft.lib:publiclib:$versions.publiclib"//基础库
+
+ext.deps = deps
+
+def build_versions = [:]
+build_versions.min_sdk = 21
+build_versions.target_sdk = 27
+build_versions.build_tools = "27.0.2"
+ext.build_versions = build_versions
+
+
+def addRepos(RepositoryHandler handler) {
+    handler.google()
+    handler.jcenter()
+    handler.mavenCentral()
+    //Add the JitPack repository
+    handler.maven { url "https://jitpack.io" }
+    handler.maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    handler.maven { url "https://raw.githubusercontent.com/wisesoftym/wisesoft/master" }
+}
+
+ext.addRepos = this.&addRepos

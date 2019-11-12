@@ -1,0 +1,14 @@
+<!--<ripple xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:color="#77E46720">-->
+<!--<item>-->
+<!--<shape android:shape="rectangle">-->
+<!--<solid android:color="@color/colorPrimary"/>-->
+<!--<corners android:radius="4dp"/>-->
+<!--</shape>-->
+<!--</item>-->
+<!--</ripple>-->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/white"/>
+    <corners android:radius="@dimen/common_12dp"/>
+</shape>

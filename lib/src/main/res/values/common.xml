@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- 常用字体尺寸 -->
+    <dimen name="text_size_7sp">7sp</dimen>
+    <dimen name="text_size_8sp">8sp</dimen>
+    <dimen name="text_size_9sp">9sp</dimen>
+    <dimen name="text_size_10sp">10sp</dimen>
+    <dimen name="text_size_11sp">11sp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_15sp">15sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+    <dimen name="text_size_22sp">22sp</dimen>
+    <dimen name="text_size_24sp">24sp</dimen>
+    <dimen name="text_size_28sp">28sp</dimen>
+    <dimen name="text_size_32sp">32sp</dimen>
+
+    <!-- 通用行距 -->
+    <dimen name="common_2dp">2dp</dimen>
+    <dimen name="common_4dp">4dp</dimen>
+    <dimen name="common_6dp">6dp</dimen>
+    <dimen name="common_8dp">8dp</dimen>
+    <dimen name="common_10dp">10dp</dimen>
+    <dimen name="common_12dp">12dp</dimen>
+    <dimen name="common_14dp">14dp</dimen>
+    <dimen name="common_16dp">16dp</dimen>
+    <dimen name="common_20dp">20dp</dimen>
+    <dimen name="_common_22dp">22dp</dimen>
+    <dimen name="common_24dp">24dp</dimen>
+    <dimen name="common_28dp">28dp</dimen>
+    <dimen name="common_32dp">32dp</dimen>
+    <dimen name="common_36dp">36dp</dimen>
+    <dimen name="common_40dp">40dp</dimen>
+    <dimen name="common_44dp">44dp</dimen>
+    <dimen name="common_48dp">48dp</dimen>
+    <dimen name="common_56dp">56dp</dimen>
+    <dimen name="common_60dp">60dp</dimen>
+    <dimen name="common_64dp">64dp</dimen>
+    <dimen name="common_68dp">68dp</dimen>
+    <dimen name="common_72dp">72dp</dimen>
+    <dimen name="common_80dp">80dp</dimen>
+    <dimen name="common_96dp">96dp</dimen>
+
+    <dimen name="common_100dp">100dp</dimen>
+
+    <dimen name="common_110dp">110dp</dimen>
+    <dimen name="common_120dp">120dp</dimen>
+    <dimen name="common_130dp">130dp</dimen>
+    <dimen name="common_144dp">144dp</dimen>
+    <dimen name="common_170dp">170dp</dimen>
+    <dimen name="_common_160dp">160dp</dimen>
+
+    <dimen name="common_200dp">200dp</dimen>
+
+    <dimen name="common_220dp">220dp</dimen>
+    <dimen name="common_240dp">240dp</dimen>
+    <dimen name="common_300dp">300dp</dimen>
+    <dimen name="common_450dp">450dp</dimen>
+</resources>

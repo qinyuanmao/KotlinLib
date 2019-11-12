@@ -1,0 +1,126 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'maven'
+
+android {
+    compileSdkVersion build_versions.target_sdk
+    defaultConfig {
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
+        versionCode 1
+        versionName "1.0"
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    configurations {
+        all*.exclude group: 'com.android.support', module: 'support-v13'
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //support
+    api deps.support.app_compat
+    api deps.support.v4
+    api deps.support.v13
+    api deps.support.design
+    api deps.support.cardview
+    api deps.support.recyclerview
+    api deps.constraint_layout
+
+    //kotlin
+    api deps.kotlin.stdlib
+    api deps.kotlin.reflect
+    api deps.kotlin.coroutines
+
+    implementation deps.wcdb
+    implementation deps.snappydb
+
+    api deps.gson
+    api deps.utils
+
+    //adapter适配器
+    api deps.BaseRecyclerViewAdapterHelper
+
+    //上拉加载下拉刷新库
+    api deps.SmartRefreshLayout
+    api deps.SmartRefreshHeader
+
+    // 多dex配置
+    api deps.support.multidex
+    //换肤库
+    api(deps.skinlibrary, { exclude group: 'com.android.support' })
+
+    //material弹出框
+    api deps.material_dialog
+    //滚轮选择器
+    api deps.PickerView
+
+    //加载动画库
+    api deps.avi
+
+    //popwindow库
+    api deps.BasePopup
+
+    // RxJava and retrofit
+    api deps.rx_android
+    api deps.rxjava2
+    api deps.retrofit.runtime
+    api deps.retrofit.gson
+    api deps.persistent_cookie
+    api deps.okhttp
+
+    //图片选择库
+    api deps.PictureSelector
+
+    //桌面气泡
+    api deps.ShortcutBadger
+
+    //图片压缩库
+    api deps.Luban
+
+    //崩溃日志收集库
+/*    api deps.acra_http
+    api deps.acra_dialog
+    api deps.acra_notify*/
+
+    //侧滑库
+    api deps.swiprecyclerview
+    api deps.swipe_recycler
+}
+
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "file:///E://mygithub//wisesoft")
+            pom.version = '1.0.2'
+            pom.groupId = 'com.wisesoft.lib'
+            pom.artifactId = 'publiclib'
+            pom.packaging = "aar"
+        }
+    }
+}
